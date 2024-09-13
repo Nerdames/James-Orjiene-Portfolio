@@ -15,16 +15,16 @@
             <h1 id="logo">Folio.</h1>
     
             <ul class="pages">
-                <li><a href="">Home</a></li>
-                <li><a href="">Designs <box-icon name='chevron-up'></box-icon></a>
-                    <ul class="pages-dropdown">
-                        <li><a href="">Figma Designs</a></li>
-                        <li><a href="">Web Designs</a></li>
-                        <li><a href=""> Design Prototypes</a></li>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#">Designs<box-icon name='expand-vertical' animation='burst' size="xs"></box-icon>
+                    <ul class="drop-down">
+                        <li><a id="dropdown-link" href="#section2">Figma Designs</a></li>
+                        <li><a id="dropdown-link" href="#section3">Web Designs</a></li>
+                        <li><a id="dropdown-link" href="#section4">Design Prototypes</a></li>
                     </ul>
                 </li>
-                <li><a href="">Mockups</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="#section5">Mockups</a></li>
+                <li><a href="#section6">About</a></li>
     
             </ul>
     
@@ -45,11 +45,9 @@
 
         <main>
 
-            <div class="main1">
+            <section id="section1">
 
-                <div class="figma1">
-                    <img src="Frame 6106.svg" alt="">
-                </div>
+                <img src="figma2.svg" alt="">
     
                 <div class="intro">
                     <h4>Hello, <em id="greetings">Welcome</em></h4>
@@ -60,18 +58,174 @@
                         <li><a id="contact" href="">View CV</a></li>
                         <li><a href=""><box-icon name='linkedin' type='logo' ></box-icon></a></li>
                         <li><a href=""><box-icon name='github' type='logo' ></box-icon></a></li>
-                        <li><a href=""><box-icon name='telegram' type='logo' ></box-icon></a></li>
                         <li><a href=""><box-icon name='whatsapp' type='logo' ></box-icon></a></li>
                         
                     </ul>
                 </div>
                 
-            </div>
+            </section>
 
+            <section class="slideshow" id="section2">
+                <ul class="designs-link">
+                    <li id="link-title">Figma Designs</li>
+                    <a id="showall" href="">Show all<box-icon name='link-external' size="xs"></box-icon></a>
+                </ul>
+                
+                <div class="slides" id="figma">
+
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                </div>
+
+            </section>
+
+            <section class="slideshow" id="section3">
+                <ul class="designs-link">
+                    <li id="link-title">Web Designs</li>
+                    <a id="showall" href="">Show all<box-icon name='link-external' size="xs"></box-icon></a>
+                </ul>
+                
+                <div class="slides" id="web">
+
+                    <div class="slide">
+                        <img src="7.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="7.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="7.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                </div>
+
+            </section>
+
+            <section class="slideshow" id="section4">
+                <ul class="designs-link">
+                    <li id="link-title">Design Prototypes</li>
+                    <a id="showall" href="">Show all<box-icon name='link-external' size="xs"></box-icon></a>
+                </ul>
+                
+                <div class="slides" id="prototypes">
+
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="7.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                </div>
+
+            </section>
+
+            <section class="slideshow" id="section5">
+                <ul class="designs-link">
+                    <li id="link-title">Mockups</li>
+                    <a id="showall" href="">Show all<box-icon name='link-external' size="xs"></box-icon></a>
+                </ul>
+                
+                <div class="slides" id="prototypes">
+
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="7.jpg" alt="">
+                    </div>
+    
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="1.jpg" alt="">
+                    </div>
+    
+                </div>
+
+            </section>
+
+            <section class="slideshow" id="section6">
+                <ul class="designs-link">
+                    <li id="link-about">About</li>
+                </ul>
+                
+                <div class="about" id="about">
+
+                    <div class="summary">
+                        <div class="intro">
+                            <h4>Hello, <em id="greetings">Welcome</em></h4>
+                            <h3>I'm James Orjiene</h3>
+                            <p>A UI/UX Designer and Web Developer</p>
+                            <small style="width: 75%;">Focused on crafting intuitive, user-centered digital experiences</small>
+                            <ul class="socials">
+                                <li><a id="contact" href="">View CV</a></li>
+                                <li><a href=""><box-icon name='linkedin' type='logo' ></box-icon></a></li>
+                                <li><a href=""><box-icon name='github' type='logo' ></box-icon></a></li>
+                                <li><a href=""><box-icon name='whatsapp' type='logo' ></box-icon></a></li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div class="user-image">
+                        <img src="User 1.jpg" alt="">
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                          <li><box-icon name='html5' type='logo' size="lg"></box-icon>HTML</li>
+                          <li><box-icon name='css3' type='logo' size="lg"></box-icon>CSS</li>
+                          <li><box-icon name='javascript' type='logo' size="lg"></box-icon>JavaScript</li>
+                          <li><box-icon name='react' type='logo' size="lg"></box-icon>React</li>
+                          <li>Responsive Web Design</li>
+                          <li>UI/UX Design, Figma</li>
+                        </ul>
+                    </div>
+    
+    
+                </div>
+
+            </section>
+
+            
         </main>
 
         <footer>
-
         </footer>
 
 
