@@ -58,3 +58,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// Function to show the sidebar
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex'; // Display the sidebar
+    setTimeout(() => { // Allow the display change before triggering animation
+        sidebar.style.right = '8px'; // Slide it into view
+    }, 10); // Slight delay to trigger transition after display change
+}
+
+// Function to hide the sidebar
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.right = '-300px'; // Slide it out of view
+    setTimeout(() => {
+        sidebar.style.display = 'none'; // After sliding out, hide the sidebar
+    }, 300); // Wait for the slide-out animation to complete
+}
+
+// Close sidebar when clicking an anchor inside the sidebar
+document.querySelectorAll('.sidebar a').forEach(anchor => {
+    anchor.addEventListener('click', hideSidebar);
+});
+
+
+// Close sidebar when clicking outside
+document.addEventListener('click', (event) => {
+    const sidebar = document.querySelector('.sidebar');
+    const showSidebarButton = document.querySelector('.showsidebar');
+    if (!sidebar.contains(event.target) && !showSidebarButton.contains(event.target)) {
+        hideSidebar();
+    }
+});

@@ -11,6 +11,37 @@
 
     <div class="container">
 
+        <div class="sidebar">
+
+            <div class="hidesidebar" onclick="hideSidebar()">
+                <box-icon name='x' size="md"></box-icon>
+            </div>
+            
+            <ul class="pages">
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="#blogs-post">Blogs</a></li>
+                <li>
+                    <a href="#">Designs<i class="fas fa-chevron-down box-icon"></i></a>
+                    <ul class="drop-down">
+                        <li><a id="dropdown-link" href="#figma-designs">Figma Designs</a></li>
+                        <li><a id="dropdown-link" href="#web-designs">Web Designs</a></li>
+                        <!--<li><a id="dropdown-link" href="#design-prototypes">Design Prototypes</a></li>-->
+                    </ul>
+                </li>
+                <li><a href="#mockups-page">Mockups</a></li>
+                <li><a href="#about-page">About</a></li>
+    
+            </ul>
+    
+            <ul id="socials">
+                <li><a  href="mailto:chibueze.oe@gmail.com"><box-icon name='envelope'></box-icon>Email</a></li>
+                <li><a href="https://www.linkedin.com/in/jamesorji" target="_blank"><box-icon name='linkedin' type='logo' ></box-icon>LinkedIn</a></li>
+                <li><a href="https://github.com/Nerdames" target="_blank"><box-icon name='github' type='logo' ></box-icon>Github</a></li>
+                <li><a href="https://wa.me/+2348164603705?" target="_blank"><box-icon name='whatsapp' type='logo' ></box-icon>Whatsapp</a></li>
+                
+            </ul>
+        </div>
+
         <header>
             <h1 id="logo">Folio.</h1>
     
@@ -38,8 +69,8 @@
                 
             </ul>
     
-            <div class="showsidebar">
-                <box-icon name='menu'></box-icon>
+            <div class="showsidebar" onclick="showSidebar()">
+                <box-icon name='menu' size="md"></box-icon>
             </div>
     
         </header>
