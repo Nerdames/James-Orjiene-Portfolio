@@ -1,30 +1,29 @@
-// Get all anchor links inside '.pages li a'
-const links = document.querySelectorAll('.pages li a');
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".pages li a");
 
-// Add event listener to each anchor
-links.forEach(link => {
-  link.addEventListener('click', function(event) {
-    // Prevent default anchor behavior
-    event.preventDefault();
+  function changeActiveLink() {
+      let currentSection = "";
 
-    // Remove 'active' class from all links
-    links.forEach(l => l.classList.remove('active'));
+      // Find the section that's currently in view
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
 
-    // Add 'active' class to the clicked link
-    this.classList.add('active');
-
-    // Scroll to the section related to this anchor
-    const section = document.querySelector(this.getAttribute('href'));
-    if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth', // Smooth scrolling
-        block: 'start',     // Align to the top of the section
-        inline: 'nearest'
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+              currentSection = section.getAttribute("id");
+          }
       });
-    }
-  });
+
+      // Remove 'active' class from all links and add it to the current one
+      navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSection}`) {
+              link.classList.add("active");
+          }
+      });
+  }
+
+  window.addEventListener("scroll", changeActiveLink);
 });
-
-
-
-
