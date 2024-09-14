@@ -540,37 +540,6 @@ li {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Floating button styles */
 #scrollToTop {
     position: fixed;
@@ -597,11 +566,15 @@ li {
 }
 
 
-
-
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
 }
+
+
+
+
+
+@media (max-width:)
