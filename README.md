@@ -1,2 +1,3 @@
-# Like-Grass  Airdrop Website
- Designs mimics the grass airdrop website
+James Orjiene Portfolio
+
+Designing for connection, optimizing for engagement!
