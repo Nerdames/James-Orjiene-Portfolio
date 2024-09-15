@@ -373,16 +373,19 @@ main{
 
 .slides{
     display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
     width: 100%;
     height: auto;
-    column-gap: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
     overflow: hidden;
     border-radius: var(--regular-border);
 }
 
 .slide{
     display: flex;
-    min-width: 33%;
+    min-width: 32%;
     max-width: 250px;
     border-radius: var(--regular-border);
     padding: 8px;
@@ -672,6 +675,7 @@ footer{
 
     .showsidebar{
         display: flex;
+        fill: var(--active-hover);
     }
 
     .sidebar{
@@ -702,7 +706,7 @@ footer{
         align-items: center;
         padding: 4px;
         margin-bottom: 10px;
-        fill: var(--text);
+        fill: var(--active-hover);
         border-radius: 30px;
     }
     
@@ -746,8 +750,7 @@ footer{
     .slides{
         flex-flow: wrap;
         justify-content: space-between;
-        padding: 0 20px;
-        row-gap: 40px;
+        padding: 0px;
     }
 
     .slide{
@@ -813,7 +816,7 @@ footer{
 
 
 
-@media (max-width: 570px){
+@media (max-width: 600px){
 
     .slides{
         padding: 0 10px;
