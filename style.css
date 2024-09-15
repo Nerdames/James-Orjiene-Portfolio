@@ -157,6 +157,7 @@ header{
     padding: 10px 30px;
     border: 1px solid var(--active-hover);
     text-wrap: nowrap;
+    column-gap: 10px;
 }
 
 .showsidebar{
